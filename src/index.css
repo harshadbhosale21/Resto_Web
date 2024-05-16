@@ -19,6 +19,7 @@ html {
   left: 0;
   right: 0;
   z-index: 997;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .dropdown-tog {
@@ -111,6 +112,11 @@ html {
   line-height: 72px;
 }
 
+.section-header>h5 {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .about-col1 {
   background: url('../public/images/table.jpg') no-repeat center center/cover;
   min-height: 250px;
@@ -139,6 +145,29 @@ html {
   background: url('../public/images/food-cont2.jpeg') no-repeat center center/cover;
 }
 
+.abt-box-info>h4 {
+  font-family: 'inter', sans-serif !important;
+  font-size: 20px;
+  font-weight: 400;
+  color: #212529;
+  padding: 5px 0;
+}
+
+.abt-box-info>p {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #6C757D;
+}
+
+.abt-box-info {
+  transition: transform 0.3s;
+}
+
+.abt-box-info:hover {
+  transform: scale(1.1);
+}
+
 .stats {
   background: url('../public/images/food-cont2.jpeg') no-repeat center center/cover;
   /* height: 100px; */
@@ -149,6 +178,20 @@ html {
   height: 100%;
   background-color: hsla(0, 0%, 0%, 0.6);
   padding: 100px 0;
+}
+
+.stats-nums>h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.stats-nums>p {
+  font-size: 16px;
+  font-family: 'inter', sans-serif !important;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
 }
 
 /* *********************************************** Section Menu *************************************************  */
@@ -303,6 +346,16 @@ html {
   height: 100%;
   width: 100%;
   border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.chef-box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.chef-box:hover .chef-img>div {
+  transform: translateX(-35px)
 }
 
 .chef-img>img {
@@ -314,12 +367,113 @@ html {
 
 .chef-img {
   height: 60%;
+  position: relative;
+  overflow: hidden;
+}
+
+.chef-img>div {
+  position: absolute;
+  padding: 5px;
+  right: -30px;
+  top: 50px;
+  /* border: 2px solid black; */
+  background-color: rgba(58, 58, 58, 0.4);
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s;
+
 }
 
 .chef-info {
-  height: 40%;
+  height: 30%;
 }
 
+.chef-info>h4 {
+  font-family: 'inter', sans-serif !important;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.chef-info>span {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: rgba(33, 37, 41, 0.4);
+}
+
+.chef-info>p {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 15px 0 0;
+}
+
+
+
+/* *********************************************** CONTACT *************************************************  */
+.contact-info {
+  background-color: #f26a6a;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.contact-details>h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'inter', sans-serif !important;
+  font-weight: 700;
+}
+
+.contact-details>p {
+  color: white;
+}
+
+.contact-form {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+}
+
+
+
+
+
+/* *********************************************** SECTION-3 / Order-form /Book a Table *************************************************  */
+.section-3 {
+  padding: 110px 0 50px 0;
+}
+
+/* Order Online  */
+.order-form {
+  background-color: #4e3303;
+  width: 100%;
+}
+
+@media only screen And (min-width:1000px) {
+  .order-form {
+    width: 75%;
+  }
+}
+
+.form {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Book a Table  */
+.reservation {
+  background: url('../public/images/reservation.jpg') no-repeat center center/cover;
+  min-height: 250px;
+}
+
+.reser-forms {
+  background-color: #c2c2c2;
+}
 
 
 

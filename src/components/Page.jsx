@@ -9,7 +9,7 @@ const Pages = () => {
             <Menu />
             <Events />
             <Chefs />
-            <Gallery />
+            <Contact />
         </>
     )
 }
@@ -22,7 +22,7 @@ const Home = () => {
                     <div className="row gy-4 justify-content-between">
                         <div className="col-12 col-lg-5 order-2 order-lg-1 home-col1 d-flex flex-column justify-content-center align-items-center-align-items-lg-start text-center text-lg-start">
                             <h2>Enjoy Your Healhty <br /> Delicious Food</h2>
-                            <p className="py-2">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                            <p className="py-2">Indulge in the delight of nutritious and flavorful dishes crafted with care. At HungryHub, we're dedicated to providing you with not only delicious but also wholesome meals that nourish both body and soul.</p>
                             <div className="home-btn">
                                 <button className="btn btn-danger" style={{ borderRadius: '28px' }}><NavLink to='/book' className='nav-link'>Book a Table</NavLink></button>
                                 <button type="button" className="btn btn-warning mx-2" style={{ borderRadius: '28px' }}><NavLink to='/orderonline' className='nav-link'>Order Online</NavLink></button>
@@ -57,10 +57,10 @@ const About = () => {
                         </div>
                         <div className="col-12 col-lg-6 d-flex align-items-end">
                             <div className=" ps-0 ps-lg-5 about-col2">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Welcome to HungryHub, where passion meets palate, and every bite tells a story. We believe in the power of food to bring people together.</p>
                                 <ul className="abt-list">
-                                    <li className="ms-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li className="ms-2">Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                    <li className="ms-2">Indulge in a culinary journey that takes you around the world.</li>
+                                    <li className="ms-2">Experience the warmth of hospitality as our dedicated team strives to make every visit a memorable one.</li>
                                     <li className="ms-2">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
                                 </ul>
                                 <p className="mt-3">
@@ -80,7 +80,7 @@ const About = () => {
                         <div className="col-12 col-lg-4 px-1">
                             <div className="bg-danger text-start text-light p-4">
                                 <h3>Why Choose <br /> HungryHUb?</h3>
-                                <p className="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quae error, iusto magnam libero dolorem modi velit consectetur. Vel, deserunt. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+                                <p className="mt-4">HungryHub is not just another restaurant; it's a culinary journey waiting to be explored. With a commitment to excellence and a passion for creating memorable dining experiences, we invite you to discover why HungryHub is the perfect choice for your next meal.</p>
                                 <div className="my-2 text-center">
                                     <button className="btn btn-outline-light">Learn More</button>
                                 </div>
@@ -89,21 +89,24 @@ const About = () => {
                         <div className="col-12 col-lg-8 px-2 d-flex align-items-center">
                             <div className="row ">
                                 <div className="col-12 col-xl-4 p-2">
-                                    <div className="p-2 bg-light text-center text-dark">
-                                        <h3>Lorem, ipsum.</h3>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, quod!</p>
+                                    <div className="p-3 abt-box-info bg-light text-center text-dark">
+                                        <img src="/images/abt-box-1.png" className="my-2" alt="" />
+                                        <h4>Quality Ingredients</h4>
+                                        <p>At HungryHub, we believe that great food starts with great ingredients. That's why we source only the freshest, highest quality ingredients for every dish we serve</p>
                                     </div>
                                 </div>
                                 <div className="col-12 col-xl-4 p-2 ">
-                                    <div className="p-2 bg-light text-center text-dark">
-                                        <h3>Lorem, ipsum.</h3>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, quod!</p>
+                                    <div className="p-3 abt-box-info  bg-light text-center text-dark">
+                                        <img src="/images/abt-box-2.png" className="my-2" alt="" />
+                                        <h4>Exceptional Service</h4>
+                                        <p>At HungryHub, our commitment to excellence extends beyond the kitchen. From the moment you walk through our doors. Lorem ipsum dolor sit.</p>
                                     </div>
                                 </div>
                                 <div className="col-12 col-xl-4 p-2">
-                                    <div className="p-2 bg-light text-center text-dark">
-                                        <h3>Lorem, ipsum.</h3>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, quod!</p>
+                                    <div className="p-3 abt-box-info  bg-light text-center text-dark">
+                                        <img src="/images/abt-box-3.png" className="my-2" alt="" />
+                                        <h4>Community Engagement</h4>
+                                        <p> Through various initiatives and partnerships, we actively engage with local organizations and charities to make a positive impact in our community.</p>
                                     </div>
                                 </div>
                             </div>
@@ -115,21 +118,21 @@ const About = () => {
                 <div className="stats-hsla ">
                     <div className="container">
                         <div className="row gy-4">
-                            <div className="col-12 col-lg-3 text-center text-light">
-                                <h2>233</h2>
-                                <h3>Clients</h3>
+                            <div className="col-12 col-lg-3 stats-nums text-center text-light">
+                                <h2>30</h2>
+                                <p>Producers</p>
                             </div>
-                            <div className="col-12 col-lg-3 text-center text-light">
-                                <h2>233</h2>
-                                <h3>Clients</h3>
+                            <div className="col-12 col-lg-3 stats-nums text-center text-light">
+                                <h2>521</h2>
+                                <p>Events Hosted</p>
                             </div>
-                            <div className="col-12 col-lg-3 text-center text-light">
-                                <h2>233</h2>
-                                <h3>Clients</h3>
+                            <div className="col-12 col-lg-3 stats-nums text-center text-light">
+                                <h2>100</h2>
+                                <p>Workers</p>
                             </div>
-                            <div className="col-12 col-lg-3 text-center text-light">
-                                <h2>233</h2>
-                                <h3>Clients</h3>
+                            <div className="col-12 col-lg-3 stats-nums text-center text-light">
+                                <h2>500</h2>
+                                <p>Daily Customers</p>
                             </div>
                         </div>
                     </div>
@@ -189,7 +192,7 @@ const Menu = () => {
                                     <div className="col-12 col-lg-4 d-flex justify-content-center">
                                         <div className="dish">
                                             <div className="dish-img ">
-                                                <img src="/images/menu-item-1.png" className="img-fluid" width='75%' alt="" />
+                                                <img src="/images/menu-item-2.png" className="img-fluid" width='75%' alt="" />
                                             </div>
                                             <div className="dish-info py-3 text-center">
                                                 <h4>Magnam Tiste</h4>
@@ -201,7 +204,7 @@ const Menu = () => {
                                     <div className="col-12 col-lg-4 d-flex justify-content-center">
                                         <div className="dish">
                                             <div className="dish-img ">
-                                                <img src="/images/menu-item-1.png" className="img-fluid" width='75%' alt="" />
+                                                <img src="/images/menu-item-3.png" className="img-fluid" width='75%' alt="" />
                                             </div>
                                             <div className="dish-info py-3 text-center">
                                                 <h4>Magnam Tiste</h4>
@@ -213,7 +216,7 @@ const Menu = () => {
                                     <div className="col-12 col-lg-4 d-flex justify-content-center">
                                         <div className="dish">
                                             <div className="dish-img ">
-                                                <img src="/images/menu-item-1.png" className="img-fluid" width='75%' alt="" />
+                                                <img src="/images/menu-item-4.png" className="img-fluid" width='75%' alt="" />
                                             </div>
                                             <div className="dish-info py-3 text-center">
                                                 <h4>Magnam Tiste</h4>
@@ -225,7 +228,7 @@ const Menu = () => {
                                     <div className="col-12 col-lg-4 d-flex justify-content-center">
                                         <div className="dish">
                                             <div className="dish-img ">
-                                                <img src="/images/menu-item-1.png" className="img-fluid" width='75%' alt="" />
+                                                <img src="/images/menu-item-5.png" className="img-fluid" width='75%' alt="" />
                                             </div>
                                             <div className="dish-info py-3 text-center">
                                                 <h4>Magnam Tiste</h4>
@@ -237,7 +240,7 @@ const Menu = () => {
                                     <div className="col-12 col-lg-4 d-flex justify-content-center">
                                         <div className="dish">
                                             <div className="dish-img ">
-                                                <img src="/images/menu-item-1.png" className="img-fluid" width='75%' alt="" />
+                                                <img src="/images/menu-item-6.png" className="img-fluid" width='75%' alt="" />
                                             </div>
                                             <div className="dish-info py-3 text-center">
                                                 <h4>Magnam Tiste</h4>
@@ -403,11 +406,14 @@ const Chefs = () => {
                                 <div className="chef-box">
                                     <div className="chef-img">
                                         <img src="/images/chefs-1.jpg" className="img-fluid" alt="" />
+                                        <div>
+                                            <img src="/images/fb.png" alt="" className="py-1" /><img src="/images/tw.png" alt="" className="py-1" /><img src="/images/lin.png" alt="" className="py-1" />
+                                        </div>
                                     </div>
                                     <div className="chef-info d-flex flex-column text-center align-items-center justify-content-center p-2">
-                                        <h4>James Edwards</h4>
-                                        <p>Senior Chef</p>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <h4>Walter White</h4>
+                                        <span>Senior Chef</span>
+                                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
                                     </div>
                                 </div>
                             </div>
@@ -415,11 +421,14 @@ const Chefs = () => {
                                 <div className="chef-box">
                                     <div className="chef-img">
                                         <img src="/images/chefs-2.jpg" className="img-fluid" alt="" />
+                                        <div>
+                                            <img src="/images/fb.png" alt="" className="py-1" /><img src="/images/tw.png" alt="" className="py-1" /><img src="/images/lin.png" alt="" className="py-1" />
+                                        </div>
                                     </div>
                                     <div className="chef-info d-flex flex-column text-center align-items-center justify-content-center p-2">
-                                        <h4>James Edwards</h4>
-                                        <p>Senior Chef</p>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <h4>Micheal Oliver</h4>
+                                        <span>Cook</span>
+                                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
                                     </div>
                                 </div>
                             </div>
@@ -427,11 +436,14 @@ const Chefs = () => {
                                 <div className="chef-box">
                                     <div className="chef-img">
                                         <img src="/images/chefs-3.jpg" className="img-fluid" alt="" />
+                                        <div>
+                                            <img src="/images/fb.png" alt="" className="py-1" /><img src="/images/tw.png" alt="" className="py-1" /><img src="/images/lin.png" alt="" className="py-1" />
+                                        </div>
                                     </div>
                                     <div className="chef-info d-flex flex-column text-center align-items-center justify-content-center p-2">
                                         <h4>James Edwards</h4>
-                                        <p>Senior Chef</p>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <span>Practioner</span>
+                                        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
                                     </div>
                                 </div>
                             </div>
@@ -443,17 +455,86 @@ const Chefs = () => {
     )
 }
 
-const Gallery = () => {
+const Contact = () => {
     return (
         <>
-            <section className="section-2" id='Gallery'>
+            <section className="section-2 section-bg" id='Contact'>
                 <div className="container">
                     <div className="section-header">
-                        <h2>GALLERY</h2>
-                        <p>EXPLORE OUR <span style={{ color: 'red' }}>GALLERY </span></p>
+                        <h2>CONTACT</h2>
+                        <p>NEED HELP? <span style={{ color: 'red' }}>CONTACT US </span></p>
                     </div>
-                </div>
-            </section>
+                    <div className="contact-boxes my-2">
+                        <div className="row gy-4">
+                            <div className="col-12 col-lg-6 py-1 px-3">
+                                <div className="contact-info d-flex p-2">
+                                    <div className="contact-icon p-2 d-flex justify-content-center align-items-center">
+                                        <img src="/images/map.png" alt="" />
+                                    </div>
+                                    <div className="contact-details p-2">
+                                        <h3>Our Address</h3>
+                                        <p>A108 M.G Road, Shivaji Nagar, Pune</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-lg-6  py-1 px-3">
+                                <div className="contact-info d-flex p-2">
+                                    <div className="contact-icon p-2 d-flex justify-content-center align-items-center">
+                                        <img src="/images/mail.png" alt="" />
+                                    </div>
+                                    <div className="contact-details p-2">
+                                        <h3>Email</h3>
+                                        <p>info@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-lg-6  py-1 px-3">
+                                <div className="contact-info d-flex p-2">
+                                    <div className="contact-icon p-2 d-flex justify-content-center align-items-center">
+                                        <img src="/images/f-phone.png" alt="" />
+                                    </div>
+                                    <div className="contact-details p-2">
+                                        <h3>Call Us</h3>
+                                        <p>+12 3456781233</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-12 col-lg-6  py-1 px-3">
+                                <div className="contact-info d-flex p-2">
+                                    <div className="contact-icon p-2 d-flex justify-content-center align-items-center">
+                                        <img src="/images/f-clock.png" alt="" />
+                                    </div>
+                                    <div className="contact-details p-2">
+                                        <h3>Opening Hours</h3>
+                                        <p><span className="fw-bold">Mon - Sat: </span> 10am - 11pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="contact-form my-2 p-4">
+                        <form action="">
+                            <div class="row gy-3 my-2">
+                                <div class="col-12 col-lg-6 ">
+                                    <input type="text" class="form-control" placeholder="Your Name" aria-label="" />
+                                </div>
+                                <div class="col-12 col-lg-6 ">
+                                    <input type="text" class="form-control" placeholder="Your Phone" aria-label="Last name" />
+                                </div>
+                                <div class="col-12 ">
+                                    <input type="text" class="form-control" placeholder="Your Phone" aria-label="Last name" />
+                                </div>
+                                <div className="col-12">
+                                    <textarea class="form-control" placeholder='Message' id="exampleFormControlTextarea1" rows="4"></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-5">
+                                    <button type="submit" class="btn btn-danger">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div >
+            </section >
         </>
     )
 }

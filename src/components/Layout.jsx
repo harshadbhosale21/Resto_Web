@@ -6,29 +6,26 @@ const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg bg-light fixed py-3 py-lg-3">
                 <div className="container-fluid">
-                    <NavLink className='navbar-brand'>HungryHub</NavLink>
+                    <NavLink className='navbar-brand'><img src="/images/hungry-hub.png" className="img-fluid" width={100} alt="" /></NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle='collapse' data-bs-target='#nav-collapse' aria-controls='nav-collapse' aria-expanded='false' aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="nav-collapse">
                         <ul className="navbar-nav m-auto mb-2 mb-lg-0">
                             <li className="nav-item nav-list mx-0 mx-lg-4">
-                                <NavLink to='/#Home' className='nav-link nav-list-item'>Home</NavLink>
+                                <a href='#Home' className='nav-link nav-list-item'>Home</a>
                             </li>
                             <li className="nav-item nav-list mx-0 mx-lg-4">
-                                <NavLink to='/#About' className='nav-link nav-list-item'>About</NavLink>
+                                <a href='#About' className='nav-link nav-list-item'>About</a>
                             </li>
                             <li className="nav-item nav-list mx-0 mx-lg-4">
-                                <NavLink to='/#Menu' className='nav-link nav-list-item'>Menu</NavLink>
+                                <a href='#Menu' className='nav-link nav-list-item'>Menu</a>
                             </li>
                             <li className="nav-item nav-list mx-0 mx-lg-4">
-                                <NavLink to='/#Events' className='nav-link nav-list-item'>Events</NavLink>
+                                <a href='#Events' className='nav-link nav-list-item'>Events</a>
                             </li>
                             <li className="nav-item nav-list mx-0 mx-lg-4">
-                                <NavLink to='/#Chefs' className='nav-link nav-list-item'>Chefs</NavLink>
-                            </li>
-                            <li className="nav-item nav-list mx-0 mx-lg-4">
-                                <NavLink to='' className='nav-link nav-list-item'>Gallery</NavLink>
+                                <a href='#Chefs' className='nav-link nav-list-item'>Chefs</a>
                             </li>
                             {/* <li class="nav-item dropdown mx-0 mx-lg-2">
                                 <NavLink class="nav-link" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,7 +39,7 @@ const Navbar = () => {
                                 </ul>
                             </li> */}
                             <li className="nav-item nav-list mx-0 mx-lg-4">
-                                <NavLink to='' className='nav-link nav-list-item'>Contact</NavLink>
+                                <a href='#Contact' className='nav-link nav-list-item'>Contact</a>
                             </li>
                         </ul>
                         <div className="btn btn-danger"><NavLink to='/book' className='nav-link'>Book a Table</NavLink></div>
