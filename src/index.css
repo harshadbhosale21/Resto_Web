@@ -448,22 +448,76 @@ html {
 }
 
 /* Order Online  */
+.order-section {
+  padding: 40px 0;
+}
+
 .order-form {
-  background-color: #4e3303;
+  background-color: #e8e8e8;
+}
+
+.order-form-heading>h4 {
+  text-align: center;
+}
+
+.order-form-heading>p {
+  text-align: center;
+}
+
+.custom-accordion {
   width: 100%;
 }
 
-@media only screen And (min-width:1000px) {
+@media only screen and (min-width: 992px) {
+  .custom-accordion {
+    width: 100% !important;
+  }
+
+  .custom-accordion .accordion-item {
+    width: 100%;
+  }
+
+  .custom-accordion .accordion-button {
+    width: 100%;
+  }
+
+  .custom-accordion .accordion-collapse {
+    width: 100%;
+  }
+
   .order-form {
-    width: 75%;
+    width: 60%;
   }
 }
 
-.form {
-  height: 100%;
-  width: 100%;
+.accordion-bg-1 {
+  background: url('../public/images/breakfast.jpg') no-repeat center center/cover;
 }
 
+.accordion-bg-2 {
+  background: url('../public/images/lunch.jpg') no-repeat center center/cover;
+}
+
+.accordion-bg-3 {
+  background: url('../public/images/desert.jpg') no-repeat center center/cover;
+}
+
+.accordion-button>div {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: hsl(0, 0%, 0%, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion .accordion-header::after {
+  color: white !important;
+}
 
 /* Book a Table  */
 .reservation {

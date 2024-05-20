@@ -1,0 +1,18 @@
+{
+  "CustomerMsg": [
+    {
+      "id": "1",
+      "name": "harshad bhosale",
+      "phone": 12333334,
+      "subject": "Enquiry",
+      "message": "Want to know more about hosting events"
+    },
+    {
+      "id": "78db",
+      "name": "John Cena",
+      "phone": "1212123",
+      "subject": "Two Cheese Burger",
+      "msg": "Two for me . None for Big Show"
+    }
+  ]
+}

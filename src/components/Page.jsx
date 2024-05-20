@@ -1,4 +1,5 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Pages = () => {
@@ -456,6 +457,62 @@ const Chefs = () => {
 }
 
 const Contact = () => {
+
+    const [data, setData] = useState({ name: '', phone: '', subject: '', msg: '' });
+
+    const [name, setName] = useState('');
+    const [nameError, setNameError] = useState('');
+    const [phone, setPhone] = useState('');
+    const [phoneError, setPhoneError] = useState('');
+    const [sub, setSub] = useState('');
+    const [msg, setMsg] = useState('');
+
+    const Submit = async (e) => {
+        e.preventDefault();
+
+        if (emptyField()) {
+            setData({ name: name, phone: phone, subject: sub, msg: msg });
+            alert('Your message recorded successfully! We will reach you soon.');
+        }
+
+
+    }
+    const emptyField = () => {
+        let isValid = true;
+        if (!name) {
+            setNameError('Please Enter Name*');
+            isValid = false;
+        }
+        else {
+            setNameError('');
+        }
+
+        if (!phone) {
+            setPhoneError('Please Enter Phone Number*')
+        }
+        else {
+            setPhoneError('')
+        }
+        return isValid
+    }
+
+    useEffect(() => {
+        loadData();
+        console.log(data)
+    }, []);
+    const loadData = async (req, res) => {
+        if (data.name !== '' && data.phone !== '' && data.sub !== '' && data.msg !== '') {
+            try {
+                res = await axios.post('http://localhost:3000/CustomerMsg');
+                console.log(res.data);
+            } catch (error) {
+
+                console.log('No Data')
+            }
+        }
+    }
+
+
     return (
         <>
             <section className="section-2 section-bg" id='Contact'>
@@ -513,22 +570,28 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="contact-form my-2 p-4">
-                        <form action="">
+                        <form action="" onSubmit={(e) => Submit(e)} >
                             <div class="row gy-3 my-2">
                                 <div class="col-12 col-lg-6 ">
-                                    <input type="text" class="form-control" placeholder="Your Name" aria-label="" />
+                                    <input type="text" class="form-control" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your Name" aria-label="" />
+                                    {
+                                        nameError && <p className="mt-1 text-danger">{nameError}</p>
+                                    }
                                 </div>
                                 <div class="col-12 col-lg-6 ">
-                                    <input type="text" class="form-control" placeholder="Your Phone" aria-label="Last name" />
+                                    <input type="text" class="form-control" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Your Phone" aria-label="Last name" />
+                                    {
+                                        phoneError && <p className="mt-1 text-danger">{phoneError}</p>
+                                    }
                                 </div>
                                 <div class="col-12 ">
-                                    <input type="text" class="form-control" placeholder="Your Phone" aria-label="Last name" />
+                                    <input type="text" class="form-control" value={sub} onChange={(e) => setSub(e.target.value)} placeholder="Subject" aria-label="Last name" />
                                 </div>
                                 <div className="col-12">
-                                    <textarea class="form-control" placeholder='Message' id="exampleFormControlTextarea1" rows="4"></textarea>
+                                    <textarea class="form-control" value={msg} onChange={(e) => setMsg(e.target.value)} placeholder='Message' id="exampleFormControlTextarea1" rows="4"></textarea>
                                 </div>
                                 <div class="col-12 text-center mt-5">
-                                    <button type="submit" class="btn btn-danger">Submit</button>
+                                    <button class="btn btn-danger">Submit</button>
                                 </div>
                             </div>
                         </form>
