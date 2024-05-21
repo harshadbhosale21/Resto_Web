@@ -499,7 +499,7 @@ const Contact = () => {
     useEffect(() => {
         loadData();
         console.log(data)
-    }, []);
+    }, [data]);
     const loadData = async (req, res) => {
         if (data.name !== '' && data.phone !== '' && data.sub !== '' && data.msg !== '') {
             try {
