@@ -88,10 +88,10 @@ const OrderOnline = () => {
                                         <input type="text" class="form-control" placeholder="First name" aria-label="Full name"></input>
                                     </div>
                                     <div className="col-12 col-lg-4  mb-2 mb-lg-0">
-                                        <input type="text" class="form-control" placeholder="First name" aria-label="Phone Number 1"></input>
+                                        <input type="text" class="form-control" placeholder="Phone Number 1" aria-label="Phone Number 1"></input>
                                     </div>
                                     <div className="col-12 col-lg-4  mb-2 mb-lg-0">
-                                        <input type="text" class="form-control" placeholder="First name" aria-label="Phone Number 1"></input>
+                                        <input type="text" class="form-control" placeholder="Phone Number 2" aria-label="Phone Number 1"></input>
                                     </div>
                                     <div className="col-12  mb-2 mt-lg-3">
                                         <textarea class="form-control w-100" id="exampleFormControlTextarea1" placeholder='Enter Shipping Address' rows="3"></textarea>
