@@ -497,20 +497,23 @@ const Contact = () => {
     }
 
     useEffect(() => {
-        loadData();
-        console.log(data)
-    }, [data]);
-    const loadData = async (req, res) => {
-        if (data.name !== '' && data.phone !== '' && data.sub !== '' && data.msg !== '') {
-            try {
-                res = await axios.post('http://localhost:3000/CustomerMsg');
-                console.log(res.data);
-            } catch (error) {
+        // loadData();
+        const loadData = async (req, res) => {
+            if (data.name !== '' && data.phone !== '' && data.sub !== '' && data.msg !== '') {
+                try {
+                    res = await axios.post('http://localhost:3000/CustomerMsg');
+                    console.log(res.data);
+                } catch (error) {
 
-                console.log('No Data')
+                    console.log('No Data')
+                }
             }
         }
-    }
+        loadData()
+
+        console.log(data)
+    }, [data]);
+
 
 
     return (
