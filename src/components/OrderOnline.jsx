@@ -1,21 +1,20 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 
 const OrderOnline = () => {
 
-    const [count, setCount] = useState(0);
-    const [price, setPrice] = useState(1);
+    // const [count, setCount] = useState(0);
+    // const [price, setPrice] = useState(1);
 
-    const AddBuy = () => {
-        setCount(count + 1);
-        setPrice(price + price);
-    }
+    // const AddBuy = () => {
+    //     setCount(count + 1);
+    //     setPrice(price + price);
+    // }
     return (
         <>
             <section className="section-3" id='Contact'>
                 <div className="container">
                     <div className="section-header">
-                        <h2></h2>
                         <p>Get Your Meal <span style={{ color: 'red' }}>Delivered At Your Place </span></p>
                         <h5><NavLink to='/'>Home</NavLink> / Order Online</h5>
                     </div>
